@@ -1,14 +1,16 @@
 #include "main.h"
 /**
- * executecmd -
- * @argv:...
- * Return:
+ * executecmd - ........
+ * @argv: ...
+ * Return: ....
  */
 
-void executecmd(char **argv){
+void executecmd(char **argv)
+{
 	char *command = NULL, *actual_command = NULL;
 
-	if (argv){
+	if (argv)
+	{
 		/* get the command */
 		command = argv[0];
 
@@ -16,7 +18,8 @@ void executecmd(char **argv){
 		actual_command = use_location(command);
 
 		/* execute the actual command with execve */
-		if (execve(actual_command, argv, NULL) == -1){
+		if (execve(actual_command, argv, NULL) == -1)
+		{
 			perror("Error:");
 		}
 	}
