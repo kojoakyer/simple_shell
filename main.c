@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * main -
+ * @ac, @argv:...
+ * Return:
+ */
 
 int main(int ac, char **argv)
 {

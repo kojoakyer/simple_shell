@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * get location - *use_location
+ * @command:...
+ * Return:char
+ */
 
 char *use_location(char *command){
 	char *path, *path_copy, *path_token, *file_path;
